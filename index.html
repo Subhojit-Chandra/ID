@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subhojit Chandra | Independent Director, AI Governance & Data Analytics Leader</title>
+  <meta name="description" content="Official profile of Subhojit Chandra — IICA Empaneled Independent Director, Strategic Advisor (IT & AI), and Enterprise Data Analytics & MIS Leader." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0f172a;
+      --navy-light: #1e293b;
+      --slate: #334155;
+      --muted: #64748b;
+      --bg: #f8fafc;
+      --white: #ffffff;
+      --accent: #b45309;
+      --accent-soft: #fef3c7;
+      --border: #e2e8f0;
+      --max-width: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--navy);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Navigation */
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 68px;
+    }
+
+    .brand {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: -0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--slate);
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      color: var(--white);
+      padding: 84px 0 88px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(254, 243, 199, 0.14);
+      color: #fcd34d;
+      border: 1px solid rgba(252, 211, 77, 0.3);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.2rem, 4vw, 3.15rem);
+      line-height: 1.18;
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+      max-width: 640px;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #d97706;
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: #b45309;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: var(--white);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--white);
+    }
+
+    .profile-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+    }
+
+    .avatar-placeholder {
+      width: 132px;
+      height: 132px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #d97706, #92400e);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--white);
+      border: 3px solid rgba(255, 255, 255, 0.25);
+      overflow: hidden;
+    }
+
+    .avatar-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .profile-card p {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+    }
+
+    /* Sections */
+    section {
+      padding: 72px 0;
+    }
+
+    section.alt-bg {
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-header {
+      margin-bottom: 40px;
+    }
+
+    .section-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .section-header h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2rem;
+      color: var(--navy);
+      line-height: 1.25;
+    }
+
+    /* Cards Grid */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    section.alt-bg .card {
+      background: var(--bg);
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.06);
+    }
+
+    .card-kicker {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+      color: var(--navy);
+    }
+
+    .card p {
+      font-size: 0.94rem;
+      color: var(--slate);
+    }
+
+    /* Roles & Timeline */
+    .role-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .role-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      padding: 22px 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .role-item h3 {
+      font-size: 1.08rem;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    .role-org {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .role-desc {
+      font-size: 0.92rem;
+      color: var(--slate);
+    }
+
+    /* Credentials Badges */
+    .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .badge-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    .badge-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    .badge-item strong {
+      display: block;
+      font-size: 0.96rem;
+      color: var(--navy);
+    }
+
+    .badge-item span {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* Contact */
+    .contact-box {
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 16px;
+      padding: 48px;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .contact-box p {
+      color: #cbd5e1;
+      max-width: 580px;
+      margin: 0 auto 28px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 820px) {
+      .hero-grid,
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 56px 0 64px;
+      }
+
+      .contact-box {
+        padding: 32px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav-inner">
+      <a href="#" class="brand">Subhojit Chandra</a>
+      <nav class="nav-links">
+        <a href="#pillars">Focus Areas</a>
+        <a href="#roles">Governance & Advisory</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#publications">Thought Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Independent Director • AI Governance & Data Strategy</span>
+        <h1>Subhojit Chandra</h1>
+        <p class="hero-subtitle">
+          Bridging boardroom corporate governance, enterprise data analytics, and responsible AI oversight. Empaneled Independent Director and Strategic Advisor helping organizations strengthen digital trust, risk assurance, and operational excellence.
+        </p>
+        <div class="hero-actions">
+          <!-- UPDATE: Replace with your LinkedIn profile URL -->
+          <a href="https://www.linkedin.com/in/your-linkedin-handle" target="_blank" rel="noopener" class="btn btn-primary">Connect on LinkedIn</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="avatar-placeholder">
+          <!-- UPDATE: To add your photo, upload photo.jpg to your GitHub repo and replace SC below with: <img src="photo.jpg" alt="Subhojit Chandra"> -->
+          <img src="photo.jpg" alt="Subhojit Chandra"> -->
+        </div>
+        <h3>Subhojit Chandra</h3>
+        <p>Mumbai, Maharashtra, India</p>
+        <p style="margin-top: 8px; font-size: 0.8rem; color: #fcd34d;">IICA Empaneled Independent Director</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pillars">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Core Pillars</div>
+        <h2>Boardroom & Advisory Focus Areas</h2>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-kicker">01 • Board Stewardship</div>
+          <h3>Corporate Governance & ESG Oversight</h3>
+          <p>Empaneled Independent Director on the Indian Institute of Corporate Affairs (IICA) Databank, contributing to board skill-matrix effectiveness, director capacity building, and BRSR / Social Stock Exchange governance frameworks.</p>
+        </div>
+        <div class="card">
+          <div class="card-kicker">02 • Responsible AI</div>
+          <h3>AI Governance & Digital Consumer Trust</h3>
+          <p>Leading technical evaluations and advisory mandates on AI risk management, ISO/IEC 42001 governance alignment, algorithmic accountability, and digital consumer rights protection.</p>
+        </div>
+        <div class="card">
+          <div class="card-kicker">03 • Operational Intelligence</div>
+          <h3>Enterprise Data Analytics & MIS Leadership</h3>
+          <p>Over two decades of experience designing enterprise MIS ecosystems, automated reporting pipelines, and Lean Six Sigma Black Belt process transformations for data-driven executive decision-making.</p>
+        </div>
+        <div class="card">
+          <div class="card-kicker">04 • Resilience & Compliance</div>
+          <h3>Cybersecurity & Regulatory Assurance</h3>
+          <p>Applying a Certified Ethical Hacker (CEH) risk lens to board-level cyber resilience, DPDPA data sovereignty, internal controls, and regulatory policy consultations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roles" class="alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Leadership & Mandates</div>
+        <h2>Governance, Advisory & Executive Roles</h2>
+      </div>
+      <div class="role-list">
+        <div class="role-item">
+          <div>
+            <h3>Committee Member & Brand Ambassador</h3>
+            <div class="role-org">Society of Independent Directors (SID)</div>
+            <p class="role-desc">Serving on the Capacity Building, Policy, Research & Advocacy Committee to advance boardroom governance standards and director education.</p>
+          </div>
+        </div>
+        <div class="role-item">
+          <div>
+            <h3>Honorary Strategic Advisor & Board Advisor (IT & AI)</h3>
+            <div class="role-org">Consumer VOICE</div>
+            <p class="role-desc">Leading technical execution on AI governance testing, digital consumer protection initiatives, and international ecosystem collaborations.</p>
+          </div>
+        </div>
+        <div class="role-item">
+          <div>
+            <h3>Data Analyst Team Lead & MIS Specialist</h3>
+            <div class="role-org">Altisource Business Solutions</div>
+            <p class="role-desc">Spearheading enterprise MIS operations, analytics reporting, workflow automation, and performance governance across global business operations.</p>
+          </div>
+        </div>
+        <div class="role-item">
+          <div>
+            <h3>Founder & Editor</h3>
+            <div class="role-org">Digital Sabha</div>
+            <p class="role-desc">A thought-leadership initiative and LinkedIn publication synthesizing modern corporate governance, AI oversight, data analytics, and classical Indian statecraft.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="credentials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Qualifications & Recognition</div>
+        <h2>Certifications & Institutional Memberships</h2>
+      </div>
+      <div class="badge-grid">
+        <div class="badge-item">
+          <div class="badge-dot"></div>
+          <div>
+            <strong>IICA Empaneled Independent Director</strong>
+            <span>Online Self-Proficiency Assessment Cleared</span>
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-dot"></div>
+          <div>
+            <strong>Lean Six Sigma Black Belt</strong>
+            <span>Process Excellence & Operational Governance</span>
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-dot"></div>
+          <div>
+            <strong>Certified Ethical Hacker (CEH)</strong>
+            <span>Cybersecurity & Information Risk Assurance</span>
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-dot"></div>
+          <div>
+            <strong>SEBI Investor Certification Qualifier</strong>
+            <span>Capital Markets & Investor Protection</span>
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-dot"></div>
+          <div>
+            <strong>Executive Certificate in Corporate Governance</strong>
+            <span>Grade A+ • Governance for Directors & CXOs</span>
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-dot"></div>
+          <div>
+            <strong>Automation Hero Award</strong>
+            <span>6th CXO100 Vision Awards & Symposium</span>
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-dot"></div>
+          <div>
+            <strong>Member — Society of Energy Engineers and Managers (SEEM)</strong>
+            <span>Sustainability & Energy Governance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Research & Writing</div>
+        <h2>Selected Thought Leadership</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-kicker">Newsletter</div>
+          <h3>Digital Sabha</h3>
+          <p>Regular essays exploring boardroom oversight, AI risk governance, data-driven decision-making, and strategic lessons from Kautilya’s Arthashastra.</p>
+        </div>
+        <div class="card">
+          <div class="card-kicker">White Paper</div>
+          <h3>Global Capability Centers (GCC)</h3>
+          <p>Co-author contributing to the Technology and Human (ESG) pillars for MentorMyBoard’s thought-leadership white paper on GCC governance.</p>
+        </div>
+        <div class="card">
+          <div class="card-kicker">Research & Policy</div>
+          <h3>Social Audit & BRSR Governance</h3>
+          <p>Published commentary on Social Audit Standards and India’s Social Stock Exchange, alongside empirical research on board skill matrices and BRSR Core assurance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Connect for Board, Advisory & Speaking Inquiries</h2>
+        <p>Open to Independent Director opportunities, AI & data governance advisory mandates, policy roundtables, and executive workshops.</p>
+        <div class="hero-actions" style="justify-content: center;">
+          <!-- UPDATE: Replace with your email address and LinkedIn URL -->
+          <a href="mailto:your.email@example.com" class="btn btn-primary">Send an Email</a>
+          <a href="https://www.linkedin.com/in/your-linkedin-handle" target="_blank" rel="noopener" class="btn btn-outline">Message on LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      &copy; <span id="year"></span> Subhojit Chandra. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
